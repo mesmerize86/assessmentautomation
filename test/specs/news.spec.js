@@ -8,7 +8,7 @@ import NewsPage from '../page/news.page';
 describe('ABC News Page', ()=>{
   it('should loaded', ()=>{
     NewsPage.open();
-    APIIntegration.checkAPI('test');
+    APIIntegration.checkAPI('http://program.abcradio.net.au/api/v1/programs/ppJj0E8g2R.json');
     //APIIntegration.checkAPI('staging');
   });
 });
