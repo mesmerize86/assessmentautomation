@@ -6,13 +6,14 @@ class APIIntegrationTest {
     this.env = ''
   }
 
-  setEnvrionment(env, defaultValue){
-    return (env === undefined) ? defaultValue : env;
+  setEnvrionment(env){
+    return (env === undefined) ? 'http://program.abcradio.net.au/api/v1/programs/ppJj0E8g2R.json' : 'http://' + env + '-program.abcradio.net.au/api/v1/programs/ppJj0E8g2R.json';
   }
 
   checkAPI(env){
-      Service.axiostest.get(env).then((data)=>{
-        !!data.theProperty ? console.log('Test success') : console.log('Test Fail');
+    let url = this.setEnvrionment(env);
+      Service.axiostest.getService(url).then((response)=>{
+        console.log(response);
       });
   }
 }
