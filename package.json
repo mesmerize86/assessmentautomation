@@ -1,0 +1,26 @@
+{
+  "name": "assessmentautomation",
+  "version": "1.0.0",
+  "description": "Automation Assessment - using webdriverIO, selenium standalone service and ZEST",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "news": "wdio --suite news",
+    "start": "wdio"
+  },
+  "author": "Kishor Maharjan",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015-node6": "^0.4.0",
+    "babel-register": "^6.26.0",
+    "browsermob-proxy-client-nodejs": "0.0.0",
+    "chai": "^4.1.2",
+    "lodash": "^4.17.5",
+    "wdio-mocha-framework": "^0.5.13",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "wdio-spec-reporter": "^0.1.4",
+    "webdriverio": "^4.12.0"
+  }
+}
