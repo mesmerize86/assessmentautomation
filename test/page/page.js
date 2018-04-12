@@ -1,5 +1,5 @@
 'use strict';
-export default class Page {
+class Page {
   constructor(){
     this.title = 'Automation Assessment';
   }
@@ -19,3 +19,5 @@ export default class Page {
         });
   }
 }
+
+export default Page;

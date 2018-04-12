@@ -11,15 +11,6 @@ class NewsPage extends Page{
   }
 
   checkNewsBannerLoad(){
-
-    //let header = this.getPageElement('#header');
-    //let images = [];
-    // if(header.getTagName('img').length > 0){
-    //
-    // }
-    //console.log(browser.elementIdElement('div', '#header'));
-    // console.log(images.length + '\n');
-    // console.log(images);
   }
 
   pageLoad(){

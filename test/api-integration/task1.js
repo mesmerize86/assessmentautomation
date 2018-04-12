@@ -1,3 +1,4 @@
+'use strict';
 import Service from '../services/service';
 
 class APIIntegrationTest {
@@ -6,13 +7,21 @@ class APIIntegrationTest {
     this.url = url;
   }
 
-  checkAPI(url){
-      Service.axiostest.getService(this.url).then((response)=>{
-        console.log(response);
-      }).catch(err => {
-        console.log('Error ' + err);
-      })
+  checkAPI(){
+    Service.axiostest.getService(this.url).then((response)=>{
+      console.log(response.data);
+    }).catch(err => {
+      console.log('Error ' + err);
+    });
+  }
+
+  checkAPIById(id){
+    Service.axiostest.getServiceById(id).then((response) => {
+      console.log(response.data.arid + ' success');
+    }).catch(err => {
+      console.log(err);
+    });
   }
 }
 
-export default new APIIntegrationTest;
+export default APIIntegrationTest;
