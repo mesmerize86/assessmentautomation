@@ -10,13 +10,10 @@ class Page {
   }
 
   //pageload Wait Timeouts
-  pageLoad(){
+  pageLoad(element){
       browser
-        .timeouts({
-          'script': 1000,
-          'pageLoad': 7000,
-          'implicit': 5000
-        });
+      .waitForVisible(element);
+
   }
 }
 
