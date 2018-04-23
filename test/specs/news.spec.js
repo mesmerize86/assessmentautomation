@@ -30,13 +30,13 @@ describe('ABC News Page', ()=>{
       expect(newsBannerLoad, 'Could not find image. Check image src.!!!')
   });
 
-  it.skip('should navigate to just in page', ()=> {
+  it('should navigate to just in page', ()=> {
     NewsPage.open();
     let pageTitle = NewsPage.navigatePage('#n-justin a');
     assert.equal(pageTitle, 'Just In - ABC News (Australian Broadcasting Corporation)');
   });
 
-  it.skip('article should content title, timestamp and text', ()=>{
+  it('article should content title, timestamp and text', ()=>{
     NewsPage.open();
     NewsPage.navigatePage('#n-justin a');
     const elementConfig = {
@@ -48,14 +48,14 @@ describe('ABC News Page', ()=>{
     expect(verifyArticle, 'One of the content is missing.!!! Please check log').to.be.true;
   });
 
-  it.skip('should load video and take a screenshot on success', ()=>{
-    let url = 'news/2017-02-09/weatherill-promises-to-intervene-dramatically/8254908';
+  it('should load video and take a screenshot on success', ()=>{
+    let url = 'news/2018-04-23/nullarbor-rodeo-rider-gets-crushed-by-650kg-bull-and-walks-away/9685454';
     NewsPage.open(url);
     let verifyVidoLoad = NewsPage.verifyVideoLoad();
     expect(verifyVidoLoad, 'There is error on video content').to.be.true;
   });
 
-  it.skip('should display image gallery', ()=>{
+  it('should display image gallery', ()=>{
     let url = 'news/2017-02-10/abc-open-pic-of-the-week/8256256';
     NewsPage.open(url);
     let verifyImageGallery = NewsPage.verifyImageGallery();
