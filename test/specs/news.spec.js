@@ -49,7 +49,7 @@ describe('ABC News Page', ()=>{
   });
 
   it('should load video and take a screenshot on success', ()=>{
-    let url = 'news/2018-04-23/nullarbor-rodeo-rider-gets-crushed-by-650kg-bull-and-walks-away/9685454';
+    let url = 'news/2017-02-09/weatherill-promises-to-intervene-dramatically/8254908';
     NewsPage.open(url);
     let verifyVidoLoad = NewsPage.verifyVideoLoad();
     expect(verifyVidoLoad, 'There is error on video content').to.be.true;
