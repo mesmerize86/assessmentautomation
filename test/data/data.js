@@ -28,24 +28,6 @@ export default (
     "Open PO": "NULL"
   },
   {
-    "ID": 3456117,
-    "Name": "Halsbury Wine Co. Red Blend",
-    "New Wine": "",
-    "Status": "complete",
-    "BOM Qty": 2,
-    "Item Stock": 5885,
-    "Open PO": 0
-  },
-  {
-    "ID": 3487117,
-    "Name": "RedHeads The Shindig Barossa Clare Valley Shiraz",
-    "New Wine": "New Wine",
-    "Status": "incomplete",
-    "BOM Qty": 2,
-    "Item Stock": 0,
-    "Open PO": 7680
-  },
-  {
     "ID": 3526117,
     "Name": "Pertaringa Scarecrow Adelaide Sauvignon Blanc",
     "New Wine": "New Wine",
@@ -55,24 +37,6 @@ export default (
     "Open PO": 3072
   },
   {
-    "ID": 3582517,
-    "Name": "Slither of Sun Fleurieu Chardonnay",
-    "New Wine": "New Wine",
-    "Status": "complete",
-    "BOM Qty": 1,
-    "Item Stock": "NULL",
-    "Open PO": "NULL"
-  },
-  {
-    "ID": 3596317,
-    "Name": "Syndicate BV CV Grenache Shiraz Mataro",
-    "New Wine": "New Wine",
-    "Status": "incomplete",
-    "BOM Qty": 1,
-    "Item Stock": "NULL",
-    "Open PO": "NULL"
-  },
-  {
     "ID": "0156617",
     "Name": "Deep River McLaren Vale Shiraz",
     "New Wine": "",
@@ -80,15 +44,6 @@ export default (
     "BOM Qty": 2,
     "Item Stock": 4141,
     "Open PO": 0
-  },
-  {
-    "ID": 2586615,
-    "Name": "Credaro due fratelli Margaret River Cabernet Merlot",
-    "New Wine": "",
-    "Status": "complete",
-    "BOM Qty": 2,
-    "Item Stock": 0,
-    "Open PO": 12672
   },
   {
     "ID": 3514515,
